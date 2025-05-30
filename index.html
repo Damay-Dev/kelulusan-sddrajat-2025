@@ -11,14 +11,10 @@
         /* Mengatur font Poppins sebagai font default untuk seluruh body */
         body {
             font-family: 'Poppins', sans-serif;
-            /* Mengubah background menjadi gradient yang lebih colorful */
-            background: linear-gradient(to bottom right, #FFDAB9, #ADD8E6, #90EE90, #FFB6C1); /* Peach, Light Blue, Light Green, Light Pink */
             color: #333; /* Warna teks default */
-            /* Latar belakang paint splash */
-            background-image: url('https://drive.google.com/uc?export=download&id=1aCkZXRYsgJCG9iYUhX01Tm6jZVYVJUzp');
-            background-size: cover; /* Sesuaikan ukuran gambar */
-            background-position: center; /* Posisikan gambar di tengah */
-            background-attachment: fixed; /* Gambar tetap saat discroll */
+            /* Menggabungkan background-image (watercolour/paint splash) di atas gradient */
+            background: url('https://drive.google.com/uc?export=download&id=1aCkZXRYsgJCG9iYUhX01Tm6jZVYVJUzp') center / cover fixed,
+                        linear-gradient(to bottom right, #FFDAB9, #ADD8E6, #90EE90, #FFB6C1); /* Peach, Light Blue, Light Green, Light Pink */
             overflow-x: hidden; /* Hindari scroll horizontal */
         }
 
